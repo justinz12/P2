@@ -1,3 +1,4 @@
+//4A
 var isArmstrong = function(num) {
 	num= String (num);
     var sum = 0;
