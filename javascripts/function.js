@@ -24,6 +24,7 @@ for (var i=1; i<100000; i++) {
 var allSubstrings1 = function(s){
 	//abcdef
 	var result="";
+
 	for(var i=0; i<=s.length; i++) {
 		for(var j=i+1; j<=s.length;j++){
 			//alert(s.substring(i,j));
@@ -36,7 +37,17 @@ return result;
 
 }
 
+var allSubstrings2 = function (s) {
 
+	var result=[];
+	for (var i = 0; i <= s.length; i++){
+		for(var j = i+1; j <= s.length; j++){
+			var str= s.substring(i,j);
+			result.push(str);
+		}
+	}
+	return result;
+}
 
 
 
